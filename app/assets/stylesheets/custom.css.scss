@@ -1,0 +1,117 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+// Typography
+
+body {
+  font-size: 1.25em;
+  line-height: 1.45em;
+  padding: 60px 0 0;
+}
+
+h1 {
+  font-size: 2.35em;
+  line-height: 1.234042554em;
+  margin-top: 1.23404255em;
+  margin-bottom: 0.61702128em;
+}
+
+h2 {
+  font-size: 1.8em;
+  line-height: 1.611111112em;
+  margin-top: 1.61111111em;
+  margin-bottom: 0.80555556em;
+}
+
+h3 {
+  font-size: 1.35em;
+  line-height: 1.074074074em;
+  margin-top: 1.07407407em;
+  margin-bottom: 1.07407407em;
+}
+
+h4 {
+  font-size: 1em;
+  line-height: 1.45em;
+  margin-top: 1.45em;
+  margin-bottom: 1.45em;
+}
+
+p, ul, ol, pre, table, blockquote {
+  margin-top: 1.45em;
+  margin-bottom: 1.45em;
+}
+
+hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+b, strong, em, small, code {
+  line-height: 1;
+}
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+sub {
+  top: 0.4em;
+}
+
+section {
+	overflow: auto;
+}
+
+textarea {
+	resize: vertical;
+}
+
+// Custom styling on Bootstrap elements
+
+.jumbotron {
+	h1 {
+		margin-top: 0;
+	}
+	p {
+		margin-bottom: 1.45em;
+	}
+}
+
+// Header
+
+#logo {
+	float: left;
+	margin-right: .5em;
+	font-size: 1.66em;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	padding-top: .75em;
+	font-weight: bold;
+	&:hover {
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+// Footer
+
+footer {
+	margin-top: 3em;
+	padding-top: .5em;
+	border-top: 1px solid #eaeaea;
+	color: #777;
+	a {
+		color: #555;
+		&:hover {
+			color: #222;
+		}
+	}
+	small {
+		float: left;
+	}
+}
