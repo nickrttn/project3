@@ -6,5 +6,6 @@ Minitest::Reporters.use!
 
 class ActiveSupport::TestCase
   fixtures :all
+  include ApplicationHelper
 
 end
