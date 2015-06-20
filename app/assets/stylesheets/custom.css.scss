@@ -1,6 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+@mixin box_sizing {
+	box-sizing: border-box;
+}
+
 // Typography
 
 body {
@@ -98,6 +102,27 @@ textarea {
 	}
 }
 
+// Sidebar
+
+aside {
+	section.user_info {
+		margin-top: 1em;
+	}
+	section {
+		padding: 10px 0;
+		margin-top: 20px;
+		&:first-child {
+			border: 0;
+			padding-top: 0;
+		}
+		span {
+			display: block;
+			margin-bottom: 0.25em;
+			line-height: 1;
+		}
+	}
+}
+
 // Footer
 
 footer {
@@ -113,5 +138,30 @@ footer {
 	}
 	small {
 		float: left;
+	}
+}
+
+.debug_dump {
+	clear: both;
+	float: left;
+	width: 100%;
+	margin-top: 2.5em;
+	@include box_sizing;
+}
+
+// Forms
+
+#error_explanation {
+	color: red;
+	ul {
+		color: red;
+		margin: 0 0 1.5em 0;
+	}
+}
+
+.field_with_errors {
+	@extend .has-error;
+	.form-control {
+		color: $state-danger-text;
 	}
 }
