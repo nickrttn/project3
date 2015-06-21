@@ -5,6 +5,11 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li><%= link_to "Home", root_path %></li>
 				<li><%= link_to "Help", help_path %></li>
+				<% if logged_in? %>
+					<li><%= link_to "Highscores", '#' %></li>
+					<li><%= link_to "Restart game", logout_path, method: 'delete' %></li>
+				<% else %>
+					<li><%= link_to "Play now!", signup_path, class: "btn btn-lg btn-primary" %></li>
 			</ul>
 		</nav>
 	</div>

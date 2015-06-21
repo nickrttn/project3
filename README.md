@@ -5,3 +5,4 @@ This repository holds the code for an interactive installation built for a real 
 Sources used:
 
 - [Ruby on Rails Tutorial](http://www.railstutorial.org)
+- [Navigate form fields with arrow keys](http://ole.michelsen.dk/blog/navigate-form-fields-with-arrow-keys.html)
