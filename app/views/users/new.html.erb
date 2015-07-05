@@ -1,28 +1,19 @@
 <%= provide(:title, 'Je naam') %>
 
-<h1>Naam</h1>
-<p>Vul je naam in om te spelen.</p>
-
 <div class="row">
 	<div class="col-md-6 col-md-offset-3">
-		<table class="name-selection">
-			<tr>
-				<td>
-					<%= select_tag(:letters) do %>
-						<% ('A'..'Z').each do |letter| %>
-							<%= content_tag(:option, letter, value: letter) %>
-						<% end %>
-					<% end %>
-				</td>
-			</tr>
+		<div class="name-selection">
+			<p>Vul je naam in.</p>
+			<span class="cyclic_input active l1" tabindex="0">A</span>
+			<span class="cyclic_input l2" tabindex="0">A</span>
+			<span class="cyclic_input l3" tabindex="0">A</span>
+		</div>
+
 		</table>
 		<%= form_for(@user) do |f| %>
 			<%= render 'shared/error_messages' %>
-			<div class="form-group">
-				<%= f.label :name %>
-				<%= f.hidden_field :name, class: "form-control" %>
-			</div>
-			<%= f.submit "Let's Build!", class: "btn btn-success" %>
+				<%= f.hidden_field :name %>
+			<%= f.submit "Let's Build!", class: "btn btn-default btn-lg pull-right" %>
 		<% end %>
 	</div>
 </div>
