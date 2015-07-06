@@ -2,15 +2,18 @@
 <div class="row">
 	<div class="col-md-10 col-md-offset-1">
 		<h1>Speler: <%= @user.name %></h1>
+
 		<div class="timer">
-			<input id="clock" value="MM:SS:ms">
+			<%= form_for @user, url: { action: 'update' } do |f| %>
+				<%= f.text_field :score, id: 'clock' %>
+				<%= f.submit "I finished!" %>
+			<% end %>
 		</div>
+		
 		<div class="game" tabindex="1">
-			<p>Homeplan helpt arme mensen in derdewereldlanden aan een huis. Dat doen ze niet zomaar. Ze gaan er zelf heen om te bouwen.</p>
-			<p>Homeplan zorgt daarnaast dat er een natraject is waarin sociale ondersteuning geboden wordt. Onderwijs, verslavingszorg, seksuele voorlichting, financieel advies, belangrijke onderwerpen in de gebieden waar ze komen.</p>
-			<p>Tijdens dit spel ga je één van Homeplan's huisjes bouwen. Letterlijk, want wat voor je staat is gebaseerd op de bouwtekening van de huisjes van Homeplan.</p>
-			<p><strong>Bouw zo snel mogelijk en scoor een highscore.</strong></p>
-			<button class="btn btn-default btn-lg pull-right start" autofocus>Start</button>
+			<p><strong>Welkom in Mexico! Een nieuw huis is hard nodig.</strong></p>
+			<%= image_tag("homeplan20.jpg") %>
+			<button class="btn btn-default btn-lg start" autofocus>Start</button>
 		</div>
 	</div>
 </div>

@@ -6,3 +6,7 @@ Sources used:
 
 - [Ruby on Rails Tutorial](http://www.railstutorial.org)
 - [Navigate form fields with arrow keys](http://ole.michelsen.dk/blog/navigate-form-fields-with-arrow-keys.html)
+- [Tock](https://github.com/mrchimp/tock#how-do-i-use-it)
+- [Mexico City from airplane](http://cdn.architecturendesign.net/wp-content/uploads/2014/07/Seeing-the-World-Through-an-Airplane-Window-13.jpg)
+- [foto](http://www.homeplan.nl//Uploaded_files/Slideshow/bouwreis-mexico-november-2014-3.jpg)
+- 

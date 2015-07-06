@@ -1,0 +1,12 @@
+<% provide(:title, 'Highscores') %>
+<h1>Highscores</h1>
+<table class="users">
+	<% @users.each do |user| %>
+		<tr>
+			<td><%= user.name %></td>
+			<td><%= user.score %></td>
+		</tr>
+	<% end %>
+</ul>
+
+<%= link_to('Restart', '/', class: 'btn btn-lg btn-default') %>
